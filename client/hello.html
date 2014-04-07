@@ -1,0 +1,24 @@
+<html ng-app="empApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Employee Management</title>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <div ng-controller="homePageController">
+            <b>{{welcome}}</b>
+            <br/>
+            <a href="/employee/get" class="btn-link">
+                Employee
+            </button>
+            |
+            <a href="/leave/get" class="btn-link">
+                Leave Request
+            </button>
+        </div>
+    </body>
+</html>
